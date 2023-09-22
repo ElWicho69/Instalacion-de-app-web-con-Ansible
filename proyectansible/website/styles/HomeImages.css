@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-size: 100%;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 89px;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 8s linear infinite;
+}
+#slideI{
+    width: 100%;
+    height: 100%;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: fixed;
+    top: 89px;
+}
+.navigation-bar{
+width: 85%;
+display: flex;
+align-items: center;
+margin: 35px;
+}
+.logo{
+    flex-basis: 15%;
+}
+.logo img{
+    width: 1;
+    cursor: pointer;
+    
+}
+.menu-icons{
+    flex: 1;
+    align-items: center;
+    text-align: right;
+    
+}
+.menu-icons img{
+    width: 20px;
+    margin-left: 40px;
+    background-color: white;
+    cursor: pointer;
+}
+.content{
+    width: 90%;
+    margin: 260px auto 0;
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+font-size: 60px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: lighter;
+}
+.content h3{
+    width: 100%;
+    margin: 20px auto 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer
+}
+button :hover{
+    background: transparent;
+
+}

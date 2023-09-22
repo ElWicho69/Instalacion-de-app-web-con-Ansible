@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="SocialIcons.css">
+    <link rel="stylesheet" href="styles/SocialBar.css">
+    <link rel="stylesheet" href="styles/NavBar.css">
+    <link rel="stylesheet" href="styles/HomeImages.css">
+    <title>Activo Inmobiliario</title>
+</head>
+
+<body onload="slider()">
+    <div class="tituloDiv">
+        <h1>AGENDA TU CITA VIRTUAL AHORA MISMO</h1>
+        <h2>Activo Inmobiliario</h2>
+
+    </div>
+    <DIV class=barra>
+        <ul class="menu">
+            <li><a href="home.html">INICIO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#">PROPIEDADES</a></li>
+            <li><a href="#">PROYECTOS</a></li>
+            <li><a href="promocion.html">PROMOCIÓN</a></li>
+            <li><a href="#">CONTANCTO</a></li>
+        </ul>
+    </DIV>
+    <div class="banner">
+        <div class="slider">
+            <img src="houses/casa1.jpeg" id="slideImg">
+        </div>
+        <div class="overlay">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <img src="icons/lista_icono.png" alt="menu">
+                </div>
+                <div class="menu-icons">
+                    <a href="registro.html"><img src="icons/user.png" alt="user"></a>
+                    <img src="icons/mail.png" alt="mail">
+                </div>
+            </div>
+            <div class="content">
+                <h1>MAXIMIZA TU INVERSION</h1>
+                <h3>Somos una compañía innovadora, vanguardista y con extensa experiencia en la planeación estratégica
+                    inmobiliaria,
+                    que se especializa en asesorar, planear, promocionar y comercializar bienes raíces de gama premium.
+                </h3>
+                <div>
+                    <button type="Button">REPRODUCIR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <ul>
+            <li><a href="http://www.facebook.com" target="_blank" class="icon-facebook"></a></li>
+            <li><a href="http://www.whatsapp.com" target="_blank" class="icon-whatsapp"></a></li>
+            <li><a href="http://www.instagram.com" target="_blank" class="icon-instagram"></a></li>
+            <li><a href="http://www.gmail.com" target="_blank" class="icon-google2"></a></li>
+        </ul>
+    </div>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "houses/casa1.jpeg",
+            "houses/casa2.jpeg",
+            "houses/casa3.webp"
+        );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 8000)
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+## This playbook creates our database and run our sintaxis
+- hosts: all
+  become: true
+
+  tasks:
+    - name: create database in server
+      mysql_db: name=test_db state=present login_user=root login_password=" "
+    - name: fill database
+      copy: src=test_db.sql dest=/tmp/test_db.sql
+    - name: insert sample data into database
+      mysql_db: name=test_db state=import target=/tmp/test_db.sql login_user=root login_password=" "
+
+

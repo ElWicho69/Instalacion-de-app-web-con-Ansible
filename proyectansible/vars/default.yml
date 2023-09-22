@@ -1,0 +1,9 @@
+---
+mysql_user: "root"
+mysql_user_password: " "
+app_user: "luism"
+http_host: "amendozaar.com"
+http_conf: "amendozaar.com.conf"
+http_app: "app.mendozaar.com.conf"
+http_port: "80"
+disable_default: true
